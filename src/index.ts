@@ -15,12 +15,13 @@ export const severityValues = {
 
 export type logLevel = keyof typeof severityValues;
 
-export function severityToColor(severity: logLevel, text: string) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function severityToColor(severity: logLevel, text: string & any) {
     switch (severity) {
         case 'debug':
             return text.green;
         case 'info':
-            return text.blue;
+            return text.brightBlue;
         case 'warning':
             return text.yellow;
         case 'error':

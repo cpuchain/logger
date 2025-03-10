@@ -7,7 +7,7 @@ export declare const severityValues: {
     special: number;
 };
 export type logLevel = keyof typeof severityValues;
-export declare function severityToColor(severity: logLevel, text: string): string;
+export declare function severityToColor(severity: logLevel, text: string & any): any;
 export type Logger = Record<logLevel, (...args: string[]) => void>;
 export interface config {
     logLevel?: logLevel;
