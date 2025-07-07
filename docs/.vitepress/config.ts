@@ -8,7 +8,7 @@ export const REPO = pkgJson.repository?.url
     : 'https://github.com/cpuchain';
 export const HOMEPAGE = REPO || 'https://github.com/cpuchain';
 export const NPMJS = `https://npmjs.com/package/${pkgJson.name}`;
-export const LOGO = './logo.png';
+export const LOGO = '/logo.png';
 export const LICENSE = pkgJson.license || 'MIT';
 export const COPYRIGHT = `Copyright © 2025 ${pkgJson.author || 'CPUchain'}`;
 
