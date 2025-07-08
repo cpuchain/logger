@@ -1,6 +1,6 @@
 {
     "name": "logger-chain",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Zero deps simple node.js logger with colored outputs",
     "license": "MIT",
     "author": "CPUchain",
